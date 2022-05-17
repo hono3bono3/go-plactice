@@ -27,6 +27,9 @@ func main() {
 	// var consumers models.Consumers = []models.Consumer{{ID: "x01", IsActive: true}}
 	consumers := models.Consumers{{ID: "x01", IsActive: true}, {ID: "x02", IsActive: false}, {ID: "x03", IsActive: true}}
 	for _, v := range consumers.ActiveConsumer() {
-		fmt.Printf("%+v", v)
+		fmt.Println(v)
 	}
+
+	season := models.Peak
+	fmt.Println(season.Price(200))
 }
