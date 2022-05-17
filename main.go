@@ -14,6 +14,10 @@ func main() {
 	var route models.NationalRoute = 200
 	fmt.Println(route.String())
 
+	// キャスト
+	status2 := models.HTTPStatus(route)
+	fmt.Println(status2.String())
+
 	vs := url.Values{}
 	vs.Add("hoge", "123")
 	vs.Add("fuga", "456")
