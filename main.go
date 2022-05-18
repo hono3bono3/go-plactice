@@ -36,4 +36,11 @@ func main() {
 
 	season := models.Peak
 	fmt.Println(season.Price(200))
+
+	p := models.NewPerson("yamada", "tarou")
+	p.ChangeFirstName("hoge")
+	fmt.Println(p.FirstName)
+	p2 := models.NewPerson2("yamada", "tarou")
+	p2.ChangeFirstName("fuga")
+	fmt.Println(p2.FirstName)
 }
