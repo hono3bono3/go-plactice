@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	handler "github.com/hono3bono3/go-plactice/server/handler"
+	"github.com/hono3bono3/go-plactice/server/handler"
 )
 
 func Serve() {
