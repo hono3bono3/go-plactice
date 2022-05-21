@@ -1,9 +1,15 @@
 package store
 
-import "github.com/hono3bono3/go-plactice/server/handler"
+import (
+	"github.com/hono3bono3/go-plactice/models"
+)
 
-var comments = make([]handler.Comment, 0, 100)
+var comments = make([]models.Comment, 0, 100)
 
-func GetComments() []handler.Comment {
+func GetComments() []models.Comment {
 	return comments
+}
+
+func AddComment(c models.Comment) {
+	comments = append(comments, c)
 }
