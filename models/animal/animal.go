@@ -16,6 +16,7 @@ func (a Dog) Say() string {
 	return "wan! wan!"
 }
 
-func (a Human) Say() string {
-	return "My name is " + a.Name
+func (a Human) Say() (n string) {
+	n = "My name is " + a.Name
+	return
 }
